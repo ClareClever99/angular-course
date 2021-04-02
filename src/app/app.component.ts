@@ -11,7 +11,7 @@ export class AppComponent {
 
   courses = COURSES;
 
-  onCourseSelected(course:Course) {
-    console.log("App component - click event bubbled...", course);
+  onCourseSelected(course: Course) {
+    console.log('App component - click event bubbled...', course);
   }
 }

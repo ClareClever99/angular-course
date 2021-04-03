@@ -11,7 +11,7 @@ import { Course } from '../model/course';
 export class CourseCardComponent implements OnInit {
 
   @Input()
-  course:Course;
+  course: Course;
 
   @Input()
   cardIndex: number;
@@ -29,8 +29,8 @@ export class CourseCardComponent implements OnInit {
   }
 
   onCourseViewed() {
-    console.log("card component - button clicked ...");
-    
+    console.log('card component - button clicked ...');
+
     this.courseEmitter.emit(this.course);
 
 }

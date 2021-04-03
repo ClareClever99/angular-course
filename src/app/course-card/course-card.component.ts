@@ -33,6 +33,10 @@ export class CourseCardComponent implements OnInit {
 
     this.courseEmitter.emit(this.course);
 
-}
+  }
+
+  cardClasses() {
+    return {'beginner': this.course.category === 'BEGINNER', 'course-card': true}
+  }
 
 }

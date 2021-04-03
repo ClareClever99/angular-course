@@ -3,9 +3,11 @@
   <img
     width="300"
     alt="Angular Logo"
-    *ngIf="isImageVisible()"
+    *ngIf="isImageVisible(); else noImage"
     [src]="course.iconUrl"
   />
+
+  <ng-template #noImage><p>No image is available.</p></ng-template>
 
   <div class="course-description">
     {{ course.longDescription }}

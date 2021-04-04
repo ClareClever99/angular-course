@@ -6,8 +6,8 @@
 </div>
 
 <div>
-  <div class="courses">
-    <course-card *ngFor="let course of courses$ | async" [course]="course">
+  <div class="courses" *ngIf="courses$ | async as courses">
+    <course-card *ngFor="let course of courses" [course]="course">
       <course-image [src]="course.iconUrl"></course-image>
     </course-card>
   </div>
